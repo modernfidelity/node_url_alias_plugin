@@ -1,0 +1,26 @@
+<?php
+
+/*
+ * @file
+ *
+ * Custom Ctools Argument Plugin to provide node context based on 
+ * Node URL alias for Panel & Views pages.
+ * 
+ * @author Mark Rushton (Modernfidelity Studios)
+ *
+ */
+
+
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ *
+ * It simply tells panels where to find the .inc files that define various
+ * args, contexts, content_types. In this case the subdirectories of
+ * mofi_url_alias_plugin/panels are used.
+ */
+function node_url_alias_plugin_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'ctools' && !empty($plugin)) {
+    return "plugins/$plugin";
+  }
+}

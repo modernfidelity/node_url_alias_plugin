@@ -1,0 +1,12 @@
+name = Node URL Alias Plugin 
+
+description = Provides custom ctools argument plugin for Drupal Panel pages & views based on node path alias
+
+package = Modernfidelity Studios
+
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = page_manager
+
+version = 7.x-1.0-dev
+core = 7.x
